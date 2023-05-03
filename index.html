@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-6.css">
+</head>
+<body>
+    <h1>
+        Number Guessing Game
+    </h1>
+    <button onclick="game()">Let's Play!</button>
+    <p id="para"></p>
+    <p id="show"></p>
+    <p id="conclusion"></p>
+    <script>
+        var num;
+        var i;
+        var guess
+        function game()
+        {
+            num = prompt("Enter a Number between 1 and 100");
+            if(num < 1 || num > 100)
+            alert("Please enter valid number from between 1 and 100.");
+            else
+            {
+                document.getElementById("para").innerHTML = `Computer's Guesses are as follow:-`;
+                for(i=0; i<5; i++)
+                {
+                    guess = Math.floor(Math.random() * 100);
+                    document.getElementById("show").innerHTML = guess;
+                    if(guess == num)
+                    {
+                        document.getElementById("conclusion").innerHTML = "Computer Wins";
+                    }
+                }
+                if(i==5)
+                document.getElementById("conclusion").innerHTML = "Computer failed to guess your Number. You win!";
+            }
+        }
+    </script>
+</body>
+</html>

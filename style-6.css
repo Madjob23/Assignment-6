@@ -1,0 +1,31 @@
+body
+{
+    text-align: center;
+    background-color: green;
+}
+h1
+{
+    text-decoration: underline;
+    font-style: oblique;
+    font-size: 4em;
+    color:white;
+    text-shadow: 4px 4px 2px black;
+}
+button
+{
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-style: oblique;
+    box-shadow: 2px 2px 5px black;
+}
+button:hover
+{
+    background-color: greenyellow;
+    box-shadow: 4px 4px 3px black;
+    
+}
+button:active
+{
+    transform: translateY(5px);
+}
