@@ -26,14 +26,16 @@
             alert("Please enter valid number from between 1 and 100.");
             else
             {
+                document.getElementById("show").innerHTML = null;
                 document.getElementById("para").innerHTML = `Computer's Guesses are as follow:-`;
                 for(i=0; i<5; i++)
                 {
                     guess = Math.floor(Math.random() * 100);
-                    document.getElementById("show").innerHTML = guess;
+                    document.getElementById("show").innerHTML += guess + "<br>";
                     if(guess == num)
                     {
                         document.getElementById("conclusion").innerHTML = "Computer Wins";
+                        break;
                     }
                 }
                 if(i==5)
