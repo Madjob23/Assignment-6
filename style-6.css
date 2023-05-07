@@ -8,7 +8,7 @@ h1
     text-decoration: underline;
     font-style: oblique;
     font-size: 4em;
-    color:white;
+    color: yellow;
     text-shadow: 4px 4px 2px black;
 }
 button
@@ -18,14 +18,63 @@ button
     font-weight: bold;
     font-style: oblique;
     box-shadow: 2px 2px 5px black;
+    background-color: greenyellow;
 }
 button:hover
 {
-    background-color: greenyellow;
+    background-color: yellow;
     box-shadow: 4px 4px 3px black;
     
 }
 button:active
 {
     transform: translateY(5px);
+}
+p
+{
+    font-size: 2em;
+    font-style: oblique;
+    color: white;
+    text-shadow: 4px 2px 4px black;
+}
+hr
+{
+    border: solid 2px yellow;
+    box-shadow: 3px 3px 5px black;
+    width: 25vw;
+}
+
+@media (max-width:500px)
+{
+    h1
+    {
+        font-size: 1.7em;
+        text-shadow: 1px 1px 1px;
+    }
+    button
+    {
+        padding: 4px;
+    }
+    #show
+    {
+        font-size: 1em;
+        text-shadow: 2px 1px 2px black;
+    }
+}
+
+@media(min-width:500px) and (max-width:800px)
+{
+    h1
+    {
+        font-size:2.5em;
+        text-shadow: 2px 2px 1px black;
+    }
+    button
+    {
+        padding:7px;
+    }
+    #show
+    {
+        font-size:1.7em;
+    }
 }
